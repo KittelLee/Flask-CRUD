@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>게시글 수정</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </header>
+    <body>
+        <div class="container" style="margin-top:10px;">
+            <h3>게시글 수정</h3><hr>
+            
+            <form action='/update' id="form" method='post'>
+                <span>Title</span>
+                <input type="hidden" name="number" value="{{post[0]}}">
+                <input type="text" class="form-control" style="width:30%" name="title" value="{{post[1]}}"><br>
+                <label>Contents</label>
+                <textarea class="form-control" style="width:30%; height:300px; resize:none;" name="contents">{{post[2]}}</textarea>
+                <label>Creator</label>
+                <input type="text" class="form-control" style="width:30%" name="creator" value="{{post[3]}}" readonly>
+            </form>
+            <button class="btn btn-primary" type="submit" onclick="document.getElementById('form').submit();" style="margin-top:10px;">Update</button>
+            <button class="btn btn-secondary" onclick="location.href='/'" style="margin-top:10px;">Cancel</button>
+        </div>
+    </body>
+</html>
