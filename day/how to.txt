@@ -1,0 +1,18 @@
+파이썬플라스크를 이용해서 게시판만들기(서버를 이용하여 게시판만들기)
+https://github.com/devjinuk/Project <--깃허브링크입니다.
+
+1. 바탕화면에 git->Project->day순으로 하위폴더를 만들어줍니다. (Project파일은 GITHUB와 연동되있습니다)
+
+2. day폴더 밑에 templates폴더를 만들어줍니다.
+   (templates폴더안에는 실제 구동되는 html파일이 들어갑니다.)(프론트엔드부분=사용자에게 보여지는 부분)
+
+3. day폴더 안에 board.py를 만듭니다.(서버부분=백엔드=사용자에게 보여지지 않는 부분)
+
+4. templates폴더안에 첫페이지가 될 index.html과 게시판을 작성할 create.html, 게시판을 수정할 update.html을
+만들어줍니다.
+
+5. 코딩내용은 https://github.com/devjinuk/Project  day라는 파일에 올려두었습니다.
+
+6. cmd창으로 서버를 실행한뒤 127.0.0.1:8000 입력하고 실행합니다
+
+7. 실행 후 확인
